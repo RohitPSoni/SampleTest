@@ -1,4 +1,4 @@
-package com.example.common_ui
+package com.example.sampletest.ui
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image

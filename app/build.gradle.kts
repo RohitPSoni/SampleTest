@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.example.sampletest"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.sampletest"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
     }
@@ -38,7 +38,6 @@ android {
 
 dependencies {
     implementation(project(":presentation"))
-    implementation(project(":common-ui"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -53,4 +52,6 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.coroutinesAndroidLib)
     implementation(libs.coroutinesCoreLib)
+    implementation(libs.sceneviewLib)
+    implementation(libs.coil.compose)
 }

@@ -1,4 +1,4 @@
-package com.example.common_ui
+package com.example.sampletest.ui
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

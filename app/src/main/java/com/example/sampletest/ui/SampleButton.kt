@@ -1,8 +1,8 @@
-package com.example.common_ui
+package com.example.sampletest.ui
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
@@ -31,7 +31,7 @@ fun SampleButton(
             }
             .padding(vertical = 4.dp, horizontal = 8.dp),
         charSequence = charSequence,
-        fontColor = primary,
+        fontColor = if (isSystemInDarkTheme()) Color.White else Color.Black,
         fontSize = 14
     )
 }

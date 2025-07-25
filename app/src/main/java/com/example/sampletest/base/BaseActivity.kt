@@ -11,7 +11,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.repeatOnLifecycle
-import com.example.common_ui.SampleTestTheme
+import com.example.sampletest.ui.SampleTestTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -25,6 +25,7 @@ abstract class BaseActivity<STATE, EFFECT, ViewModel : BaseViewModel<STATE, EFFE
         setContent {
             SampleTestTheme {
                 val viewState = viewModel.viewStates.collectAsStateWithLifecycle()
+                ComposeViewState(viewState.value)
             }
         }
     }

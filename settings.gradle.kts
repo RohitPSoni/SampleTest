@@ -23,4 +23,3 @@ rootProject.name = "SampleTest"
 include(":app")
 include(":presentation")
 include(":domain")
-include(":common-ui")

@@ -1,4 +1,4 @@
-package com.example.common_ui
+package com.example.sampletest.ui
 
 import android.content.res.Configuration
 import androidx.compose.ui.tooling.preview.Preview

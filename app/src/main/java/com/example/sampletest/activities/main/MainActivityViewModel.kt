@@ -15,6 +15,7 @@ class MainActivityViewModel @Inject constructor(): BaseViewModel<MainActViewStat
         viewEffect = when(type) {
             ButtonType.WebSocket -> MainActViewEffect.NavigateToWebSocket
             ButtonType.Api -> MainActViewEffect.NavigateToApi
+            ButtonType.Court -> MainActViewEffect.NavigateToBasketBallCourt
         }
     }
 }
